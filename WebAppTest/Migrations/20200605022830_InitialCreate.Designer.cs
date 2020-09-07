@@ -40,6 +40,9 @@ namespace WebAppTest.Migrations
                     b.Property<string>("Title")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Rating")
+                        .HasColumnType("int");
+
                     b.HasKey("ID");
 
                     b.ToTable("Movie");
